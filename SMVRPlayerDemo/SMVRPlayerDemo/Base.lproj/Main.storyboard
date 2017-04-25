@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wch-YW-x9X">
+                                <rect key="frame" x="141" y="58" width="131" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="FZz-G5-pF0"/>
+                                    <constraint firstAttribute="height" constant="53" id="P1j-Ub-Swo"/>
+                                </constraints>
+                                <state key="normal" title="本地2D视频"/>
+                                <connections>
+                                    <action selector="localNormalPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2Y-e0-Edw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZW-eP-CgH">
+                                <rect key="frame" x="419" y="58" width="106" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="0yI-fE-PNQ"/>
+                                    <constraint firstAttribute="width" constant="106" id="5vN-s5-8lw"/>
+                                </constraints>
+                                <state key="normal" title="本地VR视频"/>
+                                <connections>
+                                    <action selector="localVRPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8tn-ae-y2k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWS-xz-fVt">
+                                <rect key="frame" x="141" y="184" width="89" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="SXG-hk-ayD"/>
+                                    <constraint firstAttribute="width" constant="89" id="mwY-B0-aVK"/>
+                                </constraints>
+                                <state key="normal" title="网络2D播放"/>
+                                <connections>
+                                    <action selector="netNormalPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7J9-31-rx1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e76-sd-Rzk">
+                                <rect key="frame" x="438" y="182" width="87" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="4CX-ca-btb"/>
+                                    <constraint firstAttribute="height" constant="35" id="rQu-yE-Ieg"/>
+                                </constraints>
+                                <state key="normal" title="网络VR播放"/>
+                                <connections>
+                                    <action selector="netVRPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l03-yH-rm5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入网络视频地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2l9-Yt-28h">
+                                <rect key="frame" x="141" y="128" width="384" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zWS-xz-fVt" firstAttribute="top" secondItem="2l9-Yt-28h" secondAttribute="bottom" constant="26" id="1Uz-0i-IIl"/>
+                            <constraint firstAttribute="trailing" secondItem="CZW-eP-CgH" secondAttribute="trailing" constant="142" id="81p-XM-EHH"/>
+                            <constraint firstItem="zWS-xz-fVt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="141" id="BoL-ck-obY"/>
+                            <constraint firstAttribute="trailing" secondItem="2l9-Yt-28h" secondAttribute="trailing" constant="142" id="K2y-v1-172"/>
+                            <constraint firstItem="Wch-YW-x9X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="141" id="PXk-Cu-o9Q"/>
+                            <constraint firstItem="e76-sd-Rzk" firstAttribute="top" secondItem="2l9-Yt-28h" secondAttribute="bottom" constant="24" id="R65-V4-twB"/>
+                            <constraint firstItem="CZW-eP-CgH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="cBQ-xy-W2n"/>
+                            <constraint firstAttribute="trailing" secondItem="e76-sd-Rzk" secondAttribute="trailing" constant="142" id="com-LO-9YF"/>
+                            <constraint firstItem="Wch-YW-x9X" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="ecD-Px-8fJ"/>
+                            <constraint firstItem="2l9-Yt-28h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="141" id="gTL-Hj-1k6"/>
+                            <constraint firstItem="2l9-Yt-28h" firstAttribute="top" secondItem="Wch-YW-x9X" secondAttribute="bottom" constant="17" id="ktZ-CM-G2F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="urlTf" destination="2l9-Yt-28h" id="CNh-HV-4pc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.28185907046478" y="136.80000000000001"/>
+        </scene>
+    </scenes>
+</document>

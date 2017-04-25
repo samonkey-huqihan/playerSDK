@@ -1,0 +1,6 @@
+framework module SMVRPlayer {
+  umbrella header "SMVRPlayer.h"
+
+  export *
+  module * { export * }
+}
